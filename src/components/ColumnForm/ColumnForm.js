@@ -11,7 +11,7 @@ const ColumnForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch({ type: 'ADD_COLUMN', newColumn: { title, icon } });
+    dispatch({ type: 'ADD_COLUMN', payload: { title, icon } });
     setTitle('');
     setIcon('');
   };
@@ -22,7 +22,7 @@ const ColumnForm = (props) => {
       <TextInput value={title} onChange={(e) => setTitle(e.target.value)} />
       <label className={styles.label}>Icon:</label>
       <TextInput
-        type="text"
+        type='text'
         value={icon}
         onChange={(e) => setIcon(e.target.value)}
       />
