@@ -30,4 +30,8 @@ nav {
     text-decoration: none;
     color: $color-light;
   }
+
+  .linkActive {
+    color: $color-warning;
+  }
 }
