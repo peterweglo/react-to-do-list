@@ -8,18 +8,18 @@ const Navbar = () => {
       <Container>
         <div className={styles.nav}>
           <div className={styles.navIcon}>
-            <a href='/'>
-              <span className='fa fa-tasks'></span>
+            <a href="/">
+              <span className="fa fa-tasks"></span>
             </a>
           </div>
           <div>
             <ul>
-              <li className='linkActive'>
+              <li>
                 <NavLink
                   className={({ isActive }) =>
                     isActive ? styles.linkActive : undefined
                   }
-                  to='/'
+                  to="/"
                 >
                   Home
                 </NavLink>
@@ -29,7 +29,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive ? styles.linkActive : undefined
                   }
-                  to='/favorite'
+                  to="/favorite"
                 >
                   Favorite
                 </NavLink>
@@ -39,7 +39,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive ? styles.linkActive : undefined
                   }
-                  to='/about'
+                  to="/about"
                 >
                   About
                 </NavLink>
